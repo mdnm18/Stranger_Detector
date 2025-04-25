@@ -1,0 +1,22 @@
+{
+  "name": "software",
+  "version": "1.0.0",
+  "description": "Stranger Detector System",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Stranger",
+    "Detector",
+    "System"
+  ],
+  "author": "MONDAL PRODUCTS",
+  "license": "ISC",
+  "dependencies": {
+    "@serialport/parser-readline": "^13.0.0",
+    "express": "^5.1.0",
+    "serialport": "^13.0.0",
+    "ws": "^8.18.1"
+  }
+}

@@ -1,0 +1,16 @@
+{
+    "name": "Stranger Detector Dashboard",
+    "short_name": "Stranger Detector",
+    "description": "Real-time Intrusion Monitoring System",
+    "start_url": "/",
+    "display": "standalone",
+    "background_color": "#f4f7f9",
+    "theme_color": "#0d1117",
+    "icons": [
+        {
+            "src": "Assets/favicon.webp",
+            "sizes": "192x192",
+            "type": "image/webp"
+        }
+    ]
+}
