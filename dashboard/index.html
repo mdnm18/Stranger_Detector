@@ -1,3 +1,4 @@
+<!-- Updated index.html with modern navbar and footer -->
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -26,7 +27,7 @@
     <meta name="author" content="Mondal Products" />
 
     <!-- Favicon -->
-    <link rel="icon" href="Assets/favicon.webp" type="image/webp" />
+    <link rel="icon" href="Assets/favicon.png" type="image/png" />
     <link rel="apple-touch-icon" href="Assets/favicon.webp" />
 
     <!-- Theme Color for Mobile Browsers -->
@@ -39,7 +40,7 @@
       content="Real-time AI-powered monitoring system to detect and alert on unknown individuals."
     />
     <meta property="og:image" content="preview-image.webp" />
-    <meta property="og:url" content="https://yourdomain.com" />
+    <meta property="og:url" content="https://StrangerDetector.com" />
     <meta property="og:type" content="website" />
 
     <!-- Twitter Card -->
@@ -52,7 +53,7 @@
     <meta name="twitter:image" content="preview-image.webp" />
 
     <!-- Canonical URL -->
-    <link rel="canonical" href="https://yourdomain.com/" />
+    <link rel="canonical" href="https://StrangerDetector.com" />
 
     <!-- Manifest for PWA (Progressive Web App) -->
     <link rel="manifest" href="manifest.json" />
@@ -66,95 +67,263 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
       rel="stylesheet"
     />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
 
     <!-- CSS Stylesheet -->
     <link rel="stylesheet" href="style.css" />
 
-    <!-- Optional: Font Awesome or Icons -->
+    <!-- Font Awesome Icons -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
-      integrity="sha512-..."
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
   </head>
 
   <body>
+    <!-- Animated Background Elements -->
+    <div class="background-animation">
+      <div class="bubble"></div>
+      <div class="bubble"></div>
+      <div class="bubble"></div>
+      <div class="bubble"></div>
+      <div class="bubble"></div>
+    </div>
+
+    <!-- Modern Animated Navbar -->
+    <nav class="navbar">
+      <div class="nav-container">
+        <div class="logo">
+          <div class="logo-icon">
+            <i class="fas fa-shield-alt"></i>
+          </div>
+          <span>Stranger Detector</span>
+        </div>
+        <div class="nav-links">
+          <a href="#dashboard" class="nav-link"
+            ><i class="fas fa-home"></i> Dashboard</a
+          >
+          <a href="#settings" class="nav-link"
+            ><i class="fas fa-cog"></i> Settings</a
+          >
+          <a href="#analytics" class="nav-link"
+            ><i class="fas fa-chart-bar"></i> Analytics</a
+          >
+          <a
+            href="https://mondal-products.vercel.app/#contact"
+            target="_blank"
+            class="nav-link"
+            rel="noopener"
+            ><i class="fas fa-question-circle"></i> Help</a
+          >
+        </div>
+        <div class="nav-buttons">
+          <a href="#analytics"
+            ><button class="nav-btn" aria-label="notification">
+              <i class="fas fa-bell"></i></button
+          ></a>
+          <a
+            href="https://mondal-products.vercel.app/"
+            target="_blank"
+            rel="noopener"
+            ><button class="nav-btn" aria-label="developer">
+              <i class="fas fa-user"></i></button
+          ></a>
+        </div>
+      </div>
+    </nav>
+
     <div class="container">
       <h1>Stranger Detector Dashboard</h1>
-
-      <div class="status-box">
-        <h2>System Status</h2>
-        <div class="connection-status">
-          <div id="connection-indicator"></div>
-          <span id="connection-text">Connecting...</span>
+      <section id="dashboard">
+        <div class="status-box">
+          <h2>System Status</h2>
+          <div class="connection-status">
+            <div id="connection-indicator"></div>
+            <span id="connection-text">Connecting...</span>
+          </div>
+          <p>
+            <strong>Detector:</strong>
+            <span id="detector-status" class="status-active">Active</span>
+          </p>
+          <p>
+            <strong>Last Detection:</strong>
+            <span id="last-detection">None</span>
+          </p>
+          <p>
+            <strong>Transmitter:</strong>
+            <span id="transmitter-status" class="status-inactive"
+              >Disconnected</span
+            >
+          </p>
+          <p>
+            <strong>Current Safe Screen:</strong>
+            <span id="current-screen">Study Material</span>
+          </p>
+          <button id="toggle-system" class="status-button">
+            Pause Detection
+          </button>
         </div>
-        <p>
-          <strong>Detector:</strong>
-          <span id="detector-status" class="status-active">Active</span>
-        </p>
-        <p>
-          <strong>Last Detection:</strong>
-          <span id="last-detection">None</span>
-        </p>
-        <p>
-          <strong>Transmitter:</strong>
-          <span id="transmitter-status" class="status-inactive"
-            >Disconnected</span
-          >
-        </p>
-        <p>
-          <strong>Current Safe Screen:</strong>
-          <span id="current-screen">Study Material</span>
-        </p>
-        <button id="toggle-system" class="status-button">
-          Pause Detection
-        </button>
-      </div>
+      </section>
+      <section id="settings">
+        <div class="config-box">
+          <h2>Configuration</h2>
+          <div class="form-group">
+            <label for="sensitivity">Detection Sensitivity:</label>
+            <select id="sensitivity">
+              <option value="30">Low (30cm)</option>
+              <option value="20" selected>Medium (20cm)</option>
+              <option value="10">High (10cm)</option>
+            </select>
+          </div>
 
-      <div class="config-box">
-        <h2>Configuration</h2>
-        <div class="form-group">
-          <label for="sensitivity">Detection Sensitivity:</label>
-          <select id="sensitivity">
-            <option value="30">Low (30cm)</option>
-            <option value="20" selected>Medium (20cm)</option>
-            <option value="10">High (10cm)</option>
-          </select>
+          <div class="form-group">
+            <label for="safe-screen">Safe Screen Redirect:</label>
+            <select id="safe-screen">
+              <option value="study">Study Material</option>
+              <option value="youtube">YouTube</option>
+              <option value="desktop">Desktop</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="cooldown">Detection Cooldown (seconds):</label>
+            <input type="number" id="cooldown" min="5" max="60" value="10" />
+          </div>
+
+          <button id="save-settings" class="primary-button">
+            Save Settings
+          </button>
+          <button id="test-detection" class="secondary-button">
+            Test Detection
+          </button>
         </div>
+      </section>
 
-        <div class="form-group">
-          <label for="safe-screen">Safe Screen Redirect:</label>
-          <select id="safe-screen">
-            <option value="study">Study Material</option>
-            <option value="youtube">YouTube</option>
-            <option value="desktop">Desktop</option>
-          </select>
+      <section id="analytics">
+        <div class="log-box">
+          <h2>Detection Logs</h2>
+          <div class="log-controls">
+            <button id="clear-logs" class="small-button">Clear Logs</button>
+            <button id="export-logs" class="small-button">Export</button>
+          </div>
+          <ul id="detection-logs">
+            <!-- Logs will be populated by JavaScript -->
+          </ul>
         </div>
-
-        <div class="form-group">
-          <label for="cooldown">Detection Cooldown (seconds):</label>
-          <input type="number" id="cooldown" min="5" max="60" value="10" />
-        </div>
-
-        <button id="save-settings" class="primary-button">Save Settings</button>
-        <button id="test-detection" class="secondary-button">
-          Test Detection
-        </button>
-      </div>
-
-      <div class="log-box">
-        <h2>Detection Logs</h2>
-        <div class="log-controls">
-          <button id="clear-logs" class="small-button">Clear Logs</button>
-          <button id="export-logs" class="small-button">Export</button>
-        </div>
-        <ul id="detection-logs">
-          <!-- Logs will be populated by JavaScript -->
-        </ul>
-      </div>
+      </section>
     </div>
+
+    <!-- Modern Animated Footer -->
+    <footer class="footer">
+      <div class="footer-waves">
+        <div class="wave wave1"></div>
+        <div class="wave wave2"></div>
+        <div class="wave wave3"></div>
+      </div>
+      <div class="footer-content">
+        <div class="footer-logo">
+          <div class="footer-logo-icon">
+            <img
+              src="Assets/logo.jpg"
+              style="width: 50px; height: 50px; border-radius: 50%"
+              alt="Mandal Products"
+            />
+          </div>
+          <div class="footer-brand">
+            <h3>Mondal Products</h3>
+            <p>Experience quality and innovation</p>
+          </div>
+        </div>
+
+        <div class="footer-links">
+          <div></div>
+          <a
+            href="https://github.com/mdnm18"
+            target="_blank"
+            class="social-link"
+            rel="noopener"
+          >
+            <i class="fab fa-github"></i>
+            <span>GitHub</span>
+          </a>
+          <a
+            href="https://www.linkedin.com/in/md-nayaj-mondal"
+            target="_blank"
+            class="social-link"
+            rel="noopener"
+          >
+            <i class="fab fa-linkedin"></i>
+            <span>LinkedIn</span>
+          </a>
+          <a
+            href="https://discord.com/users/1241062535994806393"
+            target="_blank"
+            class="social-link"
+            rel="noopener"
+          >
+            <i class="fab fa-discord"></i>
+            <span>Discord</span>
+          </a>
+          <a
+            href="https://x.com/MD_N_M_18"
+            target="_blank"
+            class="social-link"
+            rel="noopener"
+          >
+            <i class="fab fa-twitter"></i>
+            <span>Twitter</span>
+          </a>
+        </div>
+
+        <div class="footer-links">
+          <div></div>
+          <a
+            href="https://www.t.me/Md_NM_18_indian"
+            target="_blank"
+            class="social-link"
+            rel="noopener"
+          >
+            <i class="fab fa-telegram"></i>
+            <span>Telegram</span>
+          </a>
+          <a
+            href="https://www.facebook.com/mdnayaj.mondal"
+            target="_blank"
+            class="social-link"
+            rel="noopener"
+          >
+            <i class="fab fa-facebook"></i>
+            <span>Facebook</span>
+          </a>
+          <a
+            href="https://www.instagram.com/md._n.m._india_18"
+            target="_blank"
+            class="social-link"
+            rel="noopener"
+          >
+            <i class="fab fa-instagram"></i>
+            <span>Instagram</span>
+          </a>
+          <a
+            href="https://mondal-products.vercel.app/"
+            target="_blank"
+            class="social-link"
+            rel="noopener"
+          >
+            <i class="fa fa-globe"></i>
+            <span>Website</span>
+          </a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 Mondal Products. All rights reserved.</p>
+      </div>
+    </footer>
 
     <script src="app.js"></script>
   </body>

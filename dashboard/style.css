@@ -1,14 +1,16 @@
+/* Original CSS - Keeping all the previous styling */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Poppins', Arial, sans-serif;
     background-color: #f4f7f9;
     margin: 0;
     padding: 0;
     color: #333;
+    overflow-x: hidden;
 }
 
 .container {
     max-width: 900px;
-    margin: auto;
+    margin: 2rem auto;
     padding: 2rem;
 }
 
@@ -72,6 +74,8 @@ button {
 
 .primary-button:hover {
     background-color: #2980b9;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(41, 128, 185, 0.4);
 }
 
 .secondary-button {
@@ -83,6 +87,8 @@ button {
 
 .secondary-button:hover {
     background-color: #d5dbdb;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(52, 73, 94, 0.2);
 }
 
 .status-button {
@@ -94,6 +100,8 @@ button {
 
 .status-button:hover {
     background-color: #c0392b;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(192, 57, 43, 0.4);
 }
 
 .small-button {
@@ -102,6 +110,11 @@ button {
     padding: 0.4rem 0.8rem;
     font-size: 0.9rem;
     margin-left: 0.5rem;
+}
+
+.small-button:hover {
+    background-color: #d5dbdb;
+    transform: translateY(-2px);
 }
 
 .log-controls {
@@ -162,6 +175,343 @@ button {
     background-color: #e74c3c;
 }
 
+/* Animated Background Elements */
+.background-animation {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    overflow: hidden;
+}
+
+.bubble {
+    position: absolute;
+    bottom: -100px;
+    width: 40px;
+    height: 40px;
+    background: rgba(52, 152, 219, 0.1);
+    border-radius: 50%;
+    opacity: 0.5;
+    animation: rise 15s infinite ease-in;
+}
+
+.bubble:nth-child(1) {
+    width: 100px;
+    height: 100px;
+    left: 10%;
+    animation-duration: 18s;
+}
+
+.bubble:nth-child(2) {
+    width: 60px;
+    height: 60px;
+    left: 30%;
+    animation-duration: 16s;
+    animation-delay: 1s;
+}
+
+.bubble:nth-child(3) {
+    width: 120px;
+    height: 120px;
+    left: 50%;
+    animation-duration: 20s;
+    animation-delay: 3s;
+}
+
+.bubble:nth-child(4) {
+    width: 80px;
+    height: 80px;
+    left: 70%;
+    animation-duration: 14s;
+    animation-delay: 2s;
+}
+
+.bubble:nth-child(5) {
+    width: 50px;
+    height: 50px;
+    left: 90%;
+    animation-duration: 19s;
+    animation-delay: 4s;
+}
+
+@keyframes rise {
+    0% {
+        bottom: -100px;
+        transform: translateX(0);
+    }
+
+    50% {
+        transform: translateX(100px);
+    }
+
+    100% {
+        bottom: 100%;
+        transform: translateX(-20px);
+    }
+}
+
+/* Modern Navbar Styles */
+.navbar {
+    position: sticky;
+    top: 8px;
+    left: 65px;
+    width: 90%;
+    z-index: 1000;
+    background: rgba(189, 214, 246, 0.8);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.18);
+    border-radius: 20px;
+}
+
+.nav-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    font-size: 1.2rem;
+    color: #2c3e50;
+}
+
+.logo-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    background: linear-gradient(135deg, #3498db, #9b59b6);
+    border-radius: 50%;
+    margin-right: 10px;
+    color: white;
+    animation: spin 10s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.nav-links {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.nav-link {
+    color: #02264a;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 0.5rem 0;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.nav-link:before {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(90deg, #3498db, #9b59b6);
+    transition: width 0.3s ease;
+    visibility: hidden;
+}
+
+.nav-link:hover {
+    color: #045992;
+}
+
+.nav-link:hover:before {
+    visibility: visible;
+    width: 100%;
+}
+
+.nav-link.active {
+    color: #3498db;
+}
+
+.nav-link.active:before {
+    visibility: visible;
+    width: 100%;
+}
+
+.nav-link i {
+    margin-right: 5px;
+}
+
+.nav-buttons {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.nav-btn {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #f2f2f2, #e6e6e6);
+    color: #3498db;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.nav-btn:hover {
+    transform: scale(1.1);
+    background: linear-gradient(135deg, #3498db, #9b59b6);
+    color: white;
+    box-shadow: 0 5px 15px rgba(52, 152, 219, 0.4);
+}
+
+/* Modern Footer Styles */
+.footer {
+    position: relative;
+    margin-top: 2rem;
+    width: 100%;
+    background: linear-gradient(135deg, #2c3e50, #1a2530);
+    color: white;
+    overflow: hidden;
+}
+
+.footer-waves {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    overflow: hidden;
+}
+
+.wave {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 200%;
+    height: 100px;
+    background: url('data:image/svg+xml;utf8,<svg viewBox="0 0 1200 120" xmlns="http://www.w3.org/2000/svg"><path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z" opacity=".25" fill="%233498db" /></svg>');
+    animation: wave 15s linear infinite;
+}
+
+.wave1 {
+    animation-delay: 0s;
+    z-index: 3;
+    opacity: 0.3;
+}
+
+.wave2 {
+    animation-delay: -5s;
+    bottom: 10px;
+    opacity: 0.5;
+    z-index: 2;
+}
+
+.wave3 {
+    animation-delay: -10s;
+    bottom: 20px;
+    opacity: 0.7;
+    z-index: 1;
+}
+
+@keyframes wave {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 3rem 2rem 2rem 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-logo {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.footer-logo-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background: linear-gradient(135deg, #3498db, #9b59b6);
+    border-radius: 50%;
+    margin-right: 15px;
+    color: white;
+    font-size: 1.2rem;
+}
+
+.footer-brand h3 {
+    margin: 0;
+    font-size: 1.3rem;
+}
+
+.footer-brand p {
+    margin: 0;
+    font-size: 0.9rem;
+    opacity: 0.7;
+}
+
+.footer-links {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.social-link {
+    color: white;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    transition: transform 0.3s ease;
+}
+
+.social-link i {
+    width: 20px;
+    margin-right: 10px;
+    font-size: 1.2rem;
+}
+
+.social-link:hover {
+    transform: translateX(5px);
+    color: #3498db;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 1.5rem 0;
+    background: rgba(0, 0, 0, 0.2);
+    font-size: 0.9rem;
+}
+
 @media (max-width: 768px) {
     .container {
         padding: 1rem;
@@ -169,5 +519,32 @@ button {
 
     button {
         padding: 0.6rem 1rem;
+    }
+
+    .nav-container {
+        flex-direction: column;
+        gap: 1rem;
+        padding: 1rem;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1rem;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        gap: 2rem;
+        padding: 3rem 1rem 2rem 1rem;
+    }
+
+    .footer-links {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .social-link {
+        margin-right: 1rem;
     }
 }

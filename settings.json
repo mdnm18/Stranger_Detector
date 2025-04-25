@@ -1,5 +1,5 @@
 {
-  "sensitivity": 20,
-  "safeScreen": "youtube",
+  "sensitivity": 10,
+  "safeScreen": "desktop",
   "cooldown": 10
 }

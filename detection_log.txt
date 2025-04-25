@@ -956,3 +956,106 @@
 22/4/2025, 4:12:38 am: Transmitter disconnected
 22/4/2025, 4:12:48 am: Transmitter disconnected
 22/4/2025, 5:50:31 am: Transmitter disconnected
+25/4/2025, 9:53:50 pm: Error: Serial port - Opening COM3: File not found
+25/4/2025, 9:59:02 pm: Receiver hardware initialized
+25/4/2025, 9:59:11 pm: Transmitter connected
+25/4/2025, 9:59:21 pm: Transmitter connected
+25/4/2025, 9:59:31 pm: Transmitter connected
+25/4/2025, 9:59:41 pm: Transmitter connected
+25/4/2025, 9:59:50 pm: Transmitter battery low: 8%
+25/4/2025, 9:59:51 pm: Transmitter connected
+25/4/2025, 10:00:01 pm: Transmitter connected
+25/4/2025, 10:00:11 pm: Transmitter connected
+25/4/2025, 10:00:21 pm: Transmitter connected
+25/4/2025, 10:00:31 pm: Transmitter connected
+25/4/2025, 10:00:41 pm: Transmitter connected
+25/4/2025, 10:00:51 pm: Transmitter connected
+25/4/2025, 10:00:52 pm: Stranger detected
+25/4/2025, 10:00:52 pm: Stranger detected
+25/4/2025, 10:00:52 pm: Stranger detected
+25/4/2025, 10:00:55 pm: Screen switched successfully
+25/4/2025, 10:00:55 pm: Screen switched successfully
+25/4/2025, 10:00:55 pm: Screen switched successfully
+25/4/2025, 10:01:01 pm: Transmitter connected
+25/4/2025, 10:01:11 pm: Transmitter connected
+25/4/2025, 10:01:21 pm: Transmitter connected
+25/4/2025, 10:01:29 pm: Stranger detected
+25/4/2025, 10:01:29 pm: Stranger detected
+25/4/2025, 10:01:29 pm: Stranger detected
+25/4/2025, 10:01:31 pm: Transmitter connected
+25/4/2025, 10:01:31 pm: Screen switched successfully
+25/4/2025, 10:01:31 pm: Screen switched successfully
+25/4/2025, 10:01:31 pm: Screen switched successfully
+25/4/2025, 10:01:41 pm: Transmitter connected
+25/4/2025, 10:01:51 pm: Transmitter connected
+25/4/2025, 10:02:01 pm: Transmitter connected
+25/4/2025, 10:02:11 pm: Transmitter connected
+25/4/2025, 10:02:21 pm: Transmitter connected
+25/4/2025, 10:02:31 pm: Transmitter connected
+25/4/2025, 10:02:41 pm: Transmitter connected
+25/4/2025, 10:02:51 pm: Transmitter connected
+25/4/2025, 10:03:01 pm: Transmitter connected
+25/4/2025, 10:03:11 pm: Transmitter connected
+25/4/2025, 10:03:21 pm: Transmitter connected
+25/4/2025, 10:03:31 pm: Transmitter connected
+25/4/2025, 10:03:39 pm: Error: INVALID_DISTANCE_VALUE
+25/4/2025, 10:03:39 pm: Error: INVALID_COOLDOWN_VALUE
+25/4/2025, 10:03:41 pm: Transmitter connected
+25/4/2025, 10:03:41 pm: Error: INVALID_DISTANCE_VALUE
+25/4/2025, 10:03:41 pm: Error: INVALID_COOLDOWN_VALUE
+25/4/2025, 10:03:41 pm: Error: INVALID_DISTANCE_VALUE
+25/4/2025, 10:03:41 pm: Error: INVALID_COOLDOWN_VALUE
+25/4/2025, 10:03:42 pm: Error: INVALID_DISTANCE_VALUE
+25/4/2025, 10:03:42 pm: Error: INVALID_COOLDOWN_VALUE
+25/4/2025, 10:03:42 pm: Error: INVALID_DISTANCE_VALUE
+25/4/2025, 10:03:42 pm: Error: INVALID_COOLDOWN_VALUE
+25/4/2025, 10:03:42 pm: Error: INVALID_DISTANCE_VALUE
+25/4/2025, 10:03:42 pm: Error: INVALID_COOLDOWN_VALUE
+25/4/2025, 10:03:42 pm: Error: INVALID_DISTANCE_VALUE
+25/4/2025, 10:03:42 pm: Error: INVALID_COOLDOWN_VALUE
+25/4/2025, 10:03:42 pm: Error: INVALID_DISTANCE_VALUE
+25/4/2025, 10:03:42 pm: Error: INVALID_COOLDOWN_VALUE
+25/4/2025, 10:03:47 pm: Error: INVALID_DISTANCE_VALUE
+25/4/2025, 10:03:47 pm: Error: INVALID_COOLDOWN_VALUE
+25/4/2025, 10:03:47 pm: Error: INVALID_DISTANCE_VALUE
+25/4/2025, 10:03:47 pm: Error: INVALID_COOLDOWN_VALUE
+25/4/2025, 10:03:47 pm: Error: INVALID_DISTANCE_VALUE
+25/4/2025, 10:03:47 pm: Error: INVALID_COOLDOWN_VALUE
+25/4/2025, 10:03:47 pm: Error: INVALID_DISTANCE_VALUE
+25/4/2025, 10:03:47 pm: Error: INVALID_COOLDOWN_VALUE
+25/4/2025, 10:03:48 pm: Error: INVALID_DISTANCE_VALUE
+25/4/2025, 10:03:48 pm: Error: INVALID_COOLDOWN_VALUE
+25/4/2025, 10:03:48 pm: Error: INVALID_DISTANCE_VALUE
+25/4/2025, 10:03:48 pm: Error: INVALID_COOLDOWN_VALUE
+25/4/2025, 10:03:48 pm: Error: INVALID_DISTANCE_VALUE
+25/4/2025, 10:03:49 pm: Error: INVALID_COOLDOWN_VALUE
+25/4/2025, 10:03:49 pm: Error: INVALID_DISTANCE_VALUE
+25/4/2025, 10:03:49 pm: Error: INVALID_COOLDOWN_VALUE
+25/4/2025, 10:03:49 pm: Error: INVALID_DISTANCE_VALUE
+25/4/2025, 10:03:49 pm: Error: INVALID_COOLDOWN_VALUE
+25/4/2025, 10:03:51 pm: Transmitter connected
+25/4/2025, 10:03:52 pm: Stranger detected
+25/4/2025, 10:03:52 pm: Stranger detected
+25/4/2025, 10:03:52 pm: Stranger detected
+25/4/2025, 10:03:53 pm: Screen switched successfully
+25/4/2025, 10:03:53 pm: Screen switched successfully
+25/4/2025, 10:03:53 pm: Screen switched successfully
+25/4/2025, 10:04:01 pm: Transmitter connected
+25/4/2025, 10:04:02 pm: Stranger detected
+25/4/2025, 10:04:02 pm: Stranger detected
+25/4/2025, 10:04:02 pm: Stranger detected
+25/4/2025, 10:04:03 pm: Screen switched successfully
+25/4/2025, 10:04:03 pm: Screen switched successfully
+25/4/2025, 10:04:04 pm: Screen switched successfully
+25/4/2025, 10:04:11 pm: Transmitter connected
+25/4/2025, 10:04:12 pm: Stranger detected
+25/4/2025, 10:04:12 pm: Stranger detected
+25/4/2025, 10:04:12 pm: Stranger detected
+25/4/2025, 10:04:13 pm: Screen switched successfully
+25/4/2025, 10:04:14 pm: Screen switched successfully
+25/4/2025, 10:04:14 pm: Screen switched successfully
+25/4/2025, 10:04:21 pm: Transmitter connected
+25/4/2025, 10:04:31 pm: Transmitter connected
+25/4/2025, 10:04:41 pm: Transmitter connected
+25/4/2025, 10:04:50 pm: Transmitter battery low: 11%
+25/4/2025, 10:04:51 pm: Transmitter connected

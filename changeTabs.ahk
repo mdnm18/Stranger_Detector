@@ -10,13 +10,13 @@ if (SafeAction = "study") {
     Run, notepad.exe
     WinWait, Untitled - Notepad
     WinActivate
-    SendInput,THE CODE BREAKERS are Working on their assignments....
+    SendInput, Mondal Products is Working on its Projects....
 } else if (SafeAction = "youtube") {
     ; Open YouTube in default browser
     Run, https://www.youtube.com/
 } else if (SafeAction = "desktop") {
     ; Minimize all windows to show desktop
-    Send, #d
+    Send, #d2
 } else {
     ; Default action - Alt+Tab to next window
     Send, !{Tab}
