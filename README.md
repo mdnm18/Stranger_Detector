@@ -1,6 +1,6 @@
 # 🚨 Stranger Detector
 
-The \*\*Stranger Detector \*\* is a real-time intrusion monitoring system designed to enhance user privacy and security. It leverages hardware-based detection (Arduino + ultrasonic sensors) and a sleek web-based interface for real-time control, alerting, and management. This intelligent system switches to a predefined "safe" screen (e.g., study material or desktop) upon detecting an unfamiliar presence near your device.
+The Stranger Detector is a real-time intrusion monitoring system designed to enhance user privacy and security. It leverages hardware-based detection (Arduino + ultrasonic sensors) and a sleek web-based interface for real-time control, alerting, and management. This intelligent system switches to a predefined "safe" screen (e.g., study material or desktop) upon detecting an unfamiliar presence near your device.
 
 ---
 
